@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  app:
+    volumes:
+      - .:/Sharan_Capstone
+    ports:
+      - "80:3000"
+    image: sharan_react:v1
+    container_name: react_testing
+    command: npm start
