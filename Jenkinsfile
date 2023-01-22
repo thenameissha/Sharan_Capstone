@@ -7,7 +7,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'docker build -t sharanv/react-app:$BUILD_NUMBER .'
+                sh 'docker build -t sharanv/sharan_react:$BUILD_NUMBER .'
             }
         }
         stage('login to dockerhub') {
